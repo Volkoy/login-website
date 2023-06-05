@@ -33,7 +33,7 @@ This project was made with:
   npm install
   ```
 
-- and finally start the server on `http://localhost:3001`
+- and finally start the server (default on `http://localhost:3001`)
 
   ```sh
   npm start
@@ -53,7 +53,7 @@ This project was made with:
   npm install
   ```
 
-- and finally start the client server on `http://localhost:3000`
+- and finally start the client server (deafult on `http://localhost:3000`)
 
   ```sh
   npm start
