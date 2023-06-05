@@ -17,7 +17,7 @@ This project was made with:
 - This project assumes you have MongoDB running locally and connected to:
   `mongodb://localhost:27017`
 
-![MongoDB] (https://imgur.com/a/j7slPQI)
+![MongoDB](https://i.imgur.com/uNU5uaN.png)
 
 ### For the server
 
