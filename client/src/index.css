@@ -1,0 +1,495 @@
+:root {
+  --bg-color: #043852;
+  --highlight-color: #13E9C8;
+  --white-color: #FEFCFD;
+  --black-color: #1E2221;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html { 
+  background-color: var(--bg-color);
+  font-family:"Montserrat";
+  font-size: 16px;
+  font-weight: 900;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0 auto;
+    color: var(--white-color);
+    
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* * {
+  outline: 1px solid red;
+} */
+
+/* Navbar styles */
+
+nav {
+  background-color: #1E2221;
+  height: 64px;
+  
+  z-index: 97;
+}
+
+.nav-container {
+  height: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 42px;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+ul li {
+  margin-left: 1em;
+  padding-left: 1em;
+}
+
+ul li a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+nav a {
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--highlight-color);
+}
+
+.login-button {
+  background-color:var(--highlight-color);
+  color: var(--black-color);
+  border: none;
+  padding: 0.85em 2em;
+  border-radius: 1em;
+  display: flex;
+  align-items: center;
+  
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1em;
+  transition: padding,color, outline;
+}
+
+.login-button:hover {
+  background-color: transparent;
+  outline: 2px solid var(--highlight-color);
+  color: var(--white-color);
+}
+.login-icon {
+  margin-left: 4px;
+}
+
+.menu {
+  display: none;
+}
+
+/* HOME */
+.hero-container{
+  max-width: 1300px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+
+  background-image: url("./images/hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  position: relative;
+
+}
+
+.text-container {
+  padding: 0em 2em;
+
+}
+
+.text-container h1 {
+  font-size: 4em;
+  padding-bottom: 2em;
+}
+
+.text-container p {
+  padding-bottom: 1em;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+/* FOOTER */
+
+footer {
+  min-height: 400px;
+  background-color: var(--black-color);
+  display: flex;
+  flex-direction: column;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}
+
+.footer-container{
+  max-width: 1300px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5em 2em;
+}
+
+.logo-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.logo-footer img {
+  height: 52px;
+  padding: 0em 1em;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-weight: 600;
+  width: 66%;
+  padding: 0em 1em;
+  
+}
+
+.about h2 { 
+  padding-bottom: 1em;
+}
+.about p { 
+  padding-bottom: 1em;
+}
+
+.footer-links {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.links {
+  padding: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+.notices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  font-size: 1em;
+  font-weight: 300;
+  background-color: var(--black-color);
+}
+
+.footer-links h2 {
+  display: flex;
+  padding-bottom: 1em;
+}
+
+.social-icon {
+  height: 32px;
+}
+
+.social-icon:hover {
+  color: var(--highlight-color);
+  cursor: pointer;
+}
+
+/* LOGIN */
+
+.form-container {
+  min-height: 100vh;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--bg-color);
+}
+
+.login-form {
+  width: 450px;
+  height: auto;
+  padding: 2em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2em;
+  color: var(--black-color);
+  background-color: var(--white-color);
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+.login-form h1 {
+  padding: 1em;
+}
+
+.login-input {
+  width: 100%;
+  position: relative;
+  padding: 1em 0em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.input-icon {
+  position: absolute;
+  display: flex;;
+  height: 1.5em;
+  margin-left: 1.5em;
+  color: var(--bg-color);
+}
+
+  input[type=email], input[type=password] {
+  width: 100%;
+  padding: 1em 4em;
+  font-size: 1rem;
+  border-radius: 2em;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+input:focus {
+  outline: var(--bg-color) solid 2px;
+}
+
+button[type="submit"] {
+  background-color:var(--bg-color);
+  color: var(--white-color);
+  border: none;
+  padding: 1em 2em;
+  margin-top: 3em;
+  border-radius: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 2em;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  text-decoration: none;
+  background-color: #1d6284;
+}
+
+.error-msg{
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  color: #c10e0e;
+  font-size: 1em;
+  background-color: #deb8b8;
+}
+
+/* PROFILE */
+
+.profile-container {
+  min-height: 100vh;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 4em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.profile-container h1 {
+  padding-bottom: 2em;
+}
+
+.user-info {
+  font-size: 1em;
+  font-weight: 600;
+  background-color: var(--white-color);
+  color:var(--black-color);
+  padding: 2em 2em;
+  border-radius: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.user-info p {
+  margin-bottom: 1em;
+}
+
+.user-email {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--bg-color);
+}
+
+.logout-button {
+  background-color:var(--bg-color);
+  color: var(--white-color);
+  border: none;
+  padding: 1em 2em;
+  border-radius: 1em;
+  display: flex;
+  align-items: center;
+  
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1em;
+  transition: padding,color, outline;
+}
+
+.logout-button:hover {
+  background-color: #0f4b69;
+}
+
+@media (max-width: 768px){
+
+  .nav-container {
+    
+  }
+
+  nav ul {
+    z-index: 98;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 64px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    display: none;
+  }
+  nav.expanded ul {
+    
+    display: block;
+  }
+
+  nav li {
+
+    width: 100%;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2em;
+    margin: 0;
+  }
+
+  .login-button {
+    position: absolute;
+    bottom: 64px;
+    margin-bottom: 2em;
+  }
+
+  .menu {
+    padding: 1em;
+    border: none;
+    background-color: transparent;
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .bars-icon {
+    color: var(--white-color);
+    height: 32px;
+  }
+
+  .footer-container{
+    max-width: 100vw;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1em 2em;
+    font-size: .8em;
+  }
+
+  .vl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-bottom: 2px solid var(--white-color);
+    width: 80%;
+  }
+
+  .footer-links {
+    padding: 2em;
+  }
+
+  .about h2 { 
+    padding-bottom: 1em;
+  }
+
+  .about{
+    display: flex;
+    align-items: center;
+  }
+
+  .login-form {
+    width: 100%;
+    padding: 0em 1em;
+  }
+
+  .logo-footer {
+    padding-bottom: 2em;
+  }
+
+}
