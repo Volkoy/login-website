@@ -33,7 +33,7 @@ const Login = () => {
       } else if (err.response?.status === 400) {
         setError("Missing Username or Password");
       } else if (err.response?.status === 401) {
-        setError("Unauthorized");
+        setError("Incorrect password or email");
       } else {
         setError("Login Failed");
       }
